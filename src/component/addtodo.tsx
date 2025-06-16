@@ -13,7 +13,11 @@ export const AddTodo = () => {
 
     return (
         <form onSubmit={handleFormSubmit}>
-            <input type="text" value={todo} onChange={(e) => setTodo(e.target.value)} />
+            <input type="text" 
+                value={todo} 
+                required
+                placeholder="something write here"
+                onChange={(e) => setTodo(e.target.value)} />
             <button type="submit"> Add </button>
         </form>
     )
